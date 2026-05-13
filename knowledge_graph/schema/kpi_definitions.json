@@ -1,0 +1,116 @@
+{
+  "version": "3.0",
+  "description": "LG전자 HE사업부 KPI 정의 (11개)",
+  "kpis": [
+    {
+      "id": "영업이익",
+      "name": "Operating Profit",
+      "name_kr": "영업이익",
+      "category": "성과",
+      "description": "HE사업부 영업이익",
+      "erp_table": "TR_SALES",
+      "erp_column": "OPERATING_PROFIT_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "영업이익률",
+      "name": "Operating Margin",
+      "name_kr": "영업이익률",
+      "category": "성과",
+      "description": "영업이익 / 매출액",
+      "erp_table": "TR_SALES",
+      "erp_column": "OPERATING_MARGIN",
+      "unit": "%"
+    },
+    {
+      "id": "매출총이익률",
+      "name": "Gross Margin",
+      "name_kr": "매출총이익률",
+      "category": "성과",
+      "description": "(매출 - 원가) / 매출",
+      "erp_table": "TR_SALES",
+      "erp_column": "GROSS_MARGIN",
+      "unit": "%"
+    },
+    {
+      "id": "매출",
+      "name": "Revenue",
+      "name_kr": "매출",
+      "category": "성과",
+      "description": "TV 제품 매출액",
+      "erp_table": "TR_SALES",
+      "erp_column": "REVENUE_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "OLED매출",
+      "name": "OLED TV Sales",
+      "name_kr": "OLED TV 매출",
+      "category": "매출구조",
+      "description": "OLED TV 제품 매출액",
+      "erp_table": "TR_SALES",
+      "erp_column": "REVENUE_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "플랫폼매출",
+      "name": "webOS Platform Revenue",
+      "name_kr": "webOS 플랫폼 매출",
+      "category": "매출구조",
+      "description": "webOS 콘텐츠/광고 매출",
+      "erp_table": "TR_SALES",
+      "erp_column": "WEBOS_REV_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "평균판매가",
+      "name": "Average Selling Price (TV)",
+      "name_kr": "TV 평균판매가",
+      "category": "가격/믹스",
+      "description": "TV 평균 판매 단가",
+      "erp_table": "TR_SALES",
+      "erp_column": "REVENUE_USD/QTY",
+      "unit": "USD"
+    },
+    {
+      "id": "프리미엄믹스",
+      "name": "Premium Product Mix",
+      "name_kr": "프리미엄 믹스",
+      "category": "가격/믹스",
+      "description": "프리미엄 제품 매출 비중",
+      "erp_table": "EXT_TECH_LIFE_CYCLE",
+      "erp_column": "PREMIUM_MIX_RATIO",
+      "unit": "%"
+    },
+    {
+      "id": "매출원가",
+      "name": "Cost of Goods Sold",
+      "name_kr": "매출원가",
+      "category": "비용/리스크",
+      "description": "제품 원가 총액",
+      "erp_table": "TR_PURCHASE",
+      "erp_column": "TOTAL_COGS_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "판관비",
+      "name": "Operating Expenses",
+      "name_kr": "판관비",
+      "category": "비용/리스크",
+      "description": "마케팅, 물류, 관리비 등",
+      "erp_table": "TR_EXPENSE",
+      "erp_column": "TOTAL_OPEX_USD",
+      "unit": "USD"
+    },
+    {
+      "id": "재고리스크",
+      "name": "Inventory Risk",
+      "name_kr": "재고 리스크",
+      "category": "비용/리스크",
+      "description": "재고 수준 및 진부화 위험",
+      "erp_table": "TR_INVENTORY",
+      "erp_column": "INVENTORY_WEEKS",
+      "unit": "weeks"
+    }
+  ]
+}

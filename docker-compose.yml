@@ -1,0 +1,56 @@
+services:
+  # Neo4j Knowledge Graph Database
+  neo4j:
+    image: neo4j:5.15.0
+    container_name: bi-neo4j
+    ports:
+      - "7474:7474"  # HTTP (Browser)
+      - "7687:7687"  # Bolt
+    environment:
+      - NEO4J_AUTH=neo4j/password123
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_memory_heap_initial__size=512m
+      - NEO4J_dbms_memory_heap_max__size=1G
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7474"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bi-network
+
+  # Streamlit Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bi-app
+    ports:
+      - "8501:8501"
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=password123
+      - NEO4J_DATABASE=neo4j
+      # API keys should be passed via .env file or environment
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ERP_DB_PATH=/app/erp_database/lge_he_erp.db
+    volumes:
+      - ./erp_database:/app/erp_database
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    networks:
+      - bi-network
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+
+networks:
+  bi-network:
+    driver: bridge

@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "description": "LG전자 HE사업부 Dimension 정의 (지역/제품/기간)",
+  "dimensions": {
+    "region": {
+      "description": "지역별 시장",
+      "nodes": [
+        {"id": "북미", "name": "북미", "name_en": "North America"},
+        {"id": "유럽", "name": "유럽", "name_en": "Europe"},
+        {"id": "아시아", "name": "아시아", "name_en": "Asia"},
+        {"id": "한국", "name": "한국", "name_en": "Korea"},
+        {"id": "중국", "name": "중국", "name_en": "China"},
+        {"id": "중동", "name": "중동", "name_en": "Middle East"},
+        {"id": "글로벌", "name": "글로벌", "name_en": "Global"}
+      ]
+    },
+    "product_category": {
+      "description": "TV 제품 카테고리",
+      "nodes": [
+        {"id": "OLED_TV", "name": "OLED TV"},
+        {"id": "LCD_TV", "name": "LCD TV"},
+        {"id": "프리미엄_TV", "name": "프리미엄 TV"},
+        {"id": "대형_TV", "name": "대형 TV (65인치+)"},
+        {"id": "TV_전체", "name": "TV 전체"}
+      ]
+    },
+    "time_period": {
+      "description": "시간 기간",
+      "nodes": [
+        {"id": "2024Q4", "year": 2024, "quarter": 4},
+        {"id": "2025Q1", "year": 2025, "quarter": 1},
+        {"id": "2025Q2", "year": 2025, "quarter": 2},
+        {"id": "2025Q3", "year": 2025, "quarter": 3},
+        {"id": "2025Q4", "year": 2025, "quarter": 4},
+        {"id": "2025H1", "year": 2025, "half": 1},
+        {"id": "2025H2", "year": 2025, "half": 2},
+        {"id": "2025", "year": 2025}
+      ]
+    }
+  }
+}

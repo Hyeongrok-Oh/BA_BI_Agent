@@ -1,0 +1,465 @@
+이름,카테고리,언급횟수,영향_Anchor,영향_Factor수
+물류비,supply_chain,23,"매출, 원가, 원가",22
+패널가격,supply_chain,23,"원가, 매출, 원가",18
+경쟁심화,competition,21,"원가, 원가, 매출",27
+재고정상화,supply_chain,15,"판매수량, 원가, 판매수량, 원가, 매출",15
+원재료비,supply_chain,14,"원가, 원가",10
+관세,trade,13,"원가, 판매수량, 매출, 원가",18
+OLED판매확대,technology,11,"판매수량, 매출, 매출",13
+수요부진,demand,11,"원가, 매출, 판매수량",13
+WebOS매출확대,technology,9,"판매수량, 매출",15
+해상운임,supply_chain,9,"원가, 원가",8
+TV수요부진,demand,8,"판매수량, 매출",8
+지역별수요,demand,8,"매출, 매출, 판매수량",1
+마케팅비용,cost,7,"원가, 원가",8
+프리미엄제품확대,technology,6,매출,10
+환율,macro_economy,6,"매출, 매출, 원가",5
+소비심리위축,demand,5,"원가, 판매수량, 매출",3
+스포츠이벤트,demand,5,"매출, 판매수량",3
+글로벌수요,demand,4,"판매수량, 매출",1
+가전수요,demand,3,매출,1
+비용개선,cost,3,원가,7
+운송비,supply_chain,3,원가,1
+출하량,quantity,3,판매수량,1
+B2B매출확대,demand,2,매출,11
+수요,macro_economy,2,"매출, 판매수량",0
+AI 기술,macro_economy,1,매출,1
+IT 세트 수요 둔화,macro_economy,1,매출,1
+IT 수요,macro_economy,1,판매수량,0
+IT세트 수요,macro_economy,1,매출,0
+경기부진,macro_economy,1,매출,1
+계절적 수요,macro_economy,1,매출,0
+광고/컨텐츠 사업 확대,macro_economy,1,매출,1
+글로벌 교역량 회복,macro_economy,1,원가,0
+기저효과,macro_economy,1,매출,2
+모기지 금리,macro_economy,1,매출,0
+믹스 악화,macro_economy,1,원가,1
+성수기효과,demand,1,매출,2
+세트 수요의 회복,macro_economy,1,매출,0
+양호한 수요,macro_economy,1,판매수량,0
+연말 성수기 효과,macro_economy,1,매출,0
+원재료 가격 안정화,macro_economy,1,원가,1
+중국 TV 업체들의 점유율 확대,macro_economy,1,매출,0
+침체된 주택 매매,macro_economy,1,매출,1
+판촉비,cost,1,원가,1
+1Q 영업이익 상회,extracted,0,,0
+1Q26 성수기 실적,extracted,0,,0
+2분기 말 또는 하반기 부담,extracted,0,,0
+AI 서버 수요 확대,extracted,0,,1
+B2B 사업 부정적 영향,extracted,0,,0
+BEP 유지,extracted,0,,0
+BS 사업부 적자 전환,extracted,0,,0
+D2C 확대,extracted,0,,1
+EPS 하향 조정,extracted,0,,0
+H&A 본부 영업이익,extracted,0,,0
+H/W 부진 상쇄,extracted,0,,0
+HE 본부 영업이익,extracted,0,,0
+HE 본부 지속가능한 이익률의 추가 개선,extracted,0,,0
+HE 사업부 미미한 영향,extracted,0,,0
+HE 사업부 실적 부진,extracted,0,,0
+HE 사업부 호실적,extracted,0,,0
+HE 사업부 흑자전환,extracted,0,,0
+HE 영업이익 감소,extracted,0,,0
+HE실적,performance,0,,2
+HS본부 실적,extracted,0,,0
+HVAC 투자,extracted,0,,1
+IVI 고급화,extracted,0,,1
+IVI 이익체력 강화,extracted,0,,1
+LCD 가격 저점,extracted,0,,1
+LCD 물량 감소,extracted,0,,1
+LCD 업황 부진,extracted,0,,1
+LG 마그나JV의 흑자 전환,extracted,0,,1
+LGD 출하량 급감,extracted,0,,1
+LGD 흑자전환,extracted,0,,1
+LG디스플레이 실적 개선,extracted,0,,1
+LG디스플레이의 높은 이익 변동성,extracted,0,,1
+LG이노텍 부진,extracted,0,,1
+LG이노텍 실적 감소,extracted,0,,0
+MC 사업부사상최대 영업적자가격,extracted,0,,0
+MC사업부적자,performance,0,,2
+MLCC 물량 확대,extracted,0,,1
+MLCC 부문의 흑자 전환,extracted,0,,0
+MS 사업부 영업이익 적자전환,extracted,0,,0
+MS의 실적 악화,extracted,0,,0
+OLED 식각,extracted,0,,1
+OLED 식각 샘플 매출,extracted,0,,1
+SCFI,extracted,0,,1
+SCFI 피크아웃,extracted,0,,1
+SDV 대응 연구개발 비용 증가,extracted,0,,1
+SDV 전환,extracted,0,,1
+SDV와 맞물린 IVI 고급화,extracted,0,,1
+SET 사업 부문의 수익성 부진,extracted,0,,0
+S사향 MLCC 공급물량 확대,extracted,0,,1
+S사향 안정적인 물량 공급,extracted,0,,1
+TV H/W 매출 증가,extracted,0,,0
+TV 매출 감소,extracted,0,,0
+TV 유럽 중심 개선 기대,extracted,0,,0
+TV 적자 지속,extracted,0,,0
+TV 적자 확대 우려,extracted,0,,0
+TV 판매관리비 감소,extracted,0,,0
+TV매출 회복,extracted,0,,0
+TV와 BS 부문 수익성 증가,extracted,0,,0
+TV와 BS 부문 흑자전환,extracted,0,,0
+VS 본부 수익성 개선,extracted,0,,0
+VS 본부 영향,extracted,0,,0
+VS 사업부 수익성의 상향 평준화,extracted,0,,0
+VS 사업부 실적,extracted,0,,1
+VS 사업부 실적 기여,extracted,0,,1
+VS 사업부 이익 기여 확대,extracted,0,,0
+W OLED 판매 부진,extracted,0,,1
+Web OS 실적 기여 확대,extracted,0,,1
+"WebOS 광고, 플랫폼 매출",extracted,0,,0
+WebOS 플랫폼 매출 증가,extracted,0,,1
+WebOS의 수익성 기여 확대,extracted,0,,1
+ePT 중심의 수요 부진,extracted,0,,1
+led 사이니지 시장 지위 확보,extracted,0,,0
+가격 전가력,extracted,0,,0
+가격 전가력 증가,extracted,0,,0
+가동률 상승,extracted,0,,0
+가시적 성과 발생,extracted,0,,0
+가전 수요 약세 지속,extracted,0,,0
+가전 수요 약화,extracted,0,,0
+가전 수요 증가,extracted,0,,0
+가전 시장 수요 회복 기대감,extracted,0,,1
+가전 시장의 수요 회복 기대감,extracted,0,,1
+가전(H&A) 매출,extracted,0,,0
+"가전, PC, TV 수요 부진",extracted,0,,1
+"개발, 생산, 품질, 영업 경쟁력 강화",extracted,0,,1
+개선 실적,extracted,0,,0
+거시 경제 불확실성,extracted,0,,1
+겨울철 에너지난 미확대,extracted,0,,1
+견조한 실적,extracted,0,,0
+경기 둔화,extracted,0,,1
+경기 방어적 성격,extracted,0,,0
+경기 침체 우려,extracted,0,,1
+경영 효율화,extracted,0,,1
+경영 효율화 효과,extracted,0,,0
+경쟁 동종업계의 실적 부진,extracted,0,,0
+경쟁사인 Whirlpool 주가 상승,extracted,0,,1
+계절성,extracted,0,,2
+계절성 반복,extracted,0,,1
+계절성 영향,extracted,0,,1
+계절성 해소,extracted,0,,0
+계절적 비수기,extracted,0,,2
+계절적 성수기,extracted,0,,1
+계절적 수요 약세,extracted,0,,1
+계절적 트레이딩 얽매임 해소,extracted,0,,0
+고객사 다변화,extracted,0,,1
+고객의 수요 패러다임 변화,extracted,0,,1
+고수익성 전망,extracted,0,,0
+고정비 부담,extracted,0,,0
+고정비 절감,extracted,0,,1
+공급망 리스크,extracted,0,,0
+관망심리 강화,extracted,0,,0
+관세 전쟁 격화,extracted,0,,1
+관세 정책 우려 완화,extracted,0,,1
+관세우려,extracted,0,,1
+광고 시장의 커넥티드TV 전환,extracted,0,,1
+구독 관련 매출 증가,extracted,0,,1
+구독 모델 성장,extracted,0,,1
+구독 사업 전환,extracted,0,,1
+구독가전,technology,0,,3
+"구리, 레진, 철강 가격 부담 완화",extracted,0,,1
+구조적 성장,extracted,0,,0
+균형 잡힌 성장,extracted,0,,0
+글로벌 TV수요 감소,extracted,0,,1
+글로벌 수요 변수,extracted,0,,0
+글로벌 수요 불확실성,extracted,0,,1
+글로벌 수요 증가,extracted,0,,1
+글로벌 전기차 시장 성장세 둔화,extracted,0,,1
+금리 인하 지연,extracted,0,,1
+금리인상,extracted,0,,1
+긍정적 시장 요소 반영,extracted,0,,0
+긍정적 실적 전망,extracted,0,,0
+긍정적 영향,extracted,0,,0
+긍정적 요인,extracted,0,,0
+긍정적 평가,extracted,0,,0
+긍정적인 요소,extracted,0,,0
+기업가치 제고,extracted,0,,1
+기후변화 대응 관련 매출액 수요 증가,extracted,0,,1
+낮아진 DMF 가격,extracted,0,,1
+내부 점유율 확대,extracted,0,,1
+냉각솔루션에 대한 관심 증가,extracted,0,,0
+높아진 모기지 금리,extracted,0,,1
+높은 전기세 부담,extracted,0,,1
+높은 점유율 달성,extracted,0,,0
+다운사이드 완화,extracted,0,,0
+달러 매출,extracted,0,,0
+달러약세 방어,extracted,0,,1
+데이터센터 냉각솔루션 수주 증가,extracted,0,,1
+디스플레이 부문의 매출 성장,extracted,0,,0
+디스플레이 부문의 부진,extracted,0,,0
+리스크,extracted,0,,0
+매출,extracted,0,,0
+매출 기여도 증가,extracted,0,,0
+매출 성장률 주춤,extracted,0,,0
+매출 수성 및 수익성 방어,extracted,0,,0
+매출감소,performance,0,,1
+매출과 영업이익 성장,extracted,0,,0
+매출상승,extracted,0,,1
+매출성장,performance,0,,3
+매출액 감소,extracted,0,,0
+매크로 수요 불확실성,extracted,0,,1
+매크로 환경,extracted,0,,1
+매크로 환경 개선,extracted,0,,1
+멀티플 리레이팅 주도,extracted,0,,0
+멕시코 공장 가동,extracted,0,,2
+멕시코 법인의 가동,extracted,0,,1
+면적당 단가가 높은 디스플레이용 PI 바니쉬 양산,extracted,0,,1
+무역 분쟁 불확실성,extracted,0,,1
+무역갈등 심화,extracted,0,,0
+"미국 가전제품 출하-재고, 주택 매매 증감률",extracted,0,,1
+미국 내 제품 판가 인상,extracted,0,,0
+미국 소비심리 위축,extracted,0,,1
+미국 수요의 점진적 하강,extracted,0,,1
+미국 주택 시장 선행 지표 반등,extracted,0,,1
+미국과 관세율 인하 협상 성공,extracted,0,,1
+미국의 주택 매매 부진,extracted,0,,1
+미래 지향적 사업 포트폴리오 변화,extracted,0,,0
+미중기술패권분쟁,extracted,0,,2
+믹스 개선,extracted,0,,1
+반사이익 기대,extracted,0,,0
+배당 기대치 상향,extracted,0,,0
+배당 여력,extracted,0,,0
+밸류에이션 저평가,extracted,0,,1
+밸류에이션 회복,extracted,0,,0
+변동성 큰 장세,extracted,0,,1
+보수적인 셀인 집행,extracted,0,,1
+보편관세 10%,extracted,0,,1
+본업 수요 증가,extracted,0,,0
+본업 수익성 개선,extracted,0,,0
+볼륨존 공략,extracted,0,,2
+부담,extracted,0,,0
+부담 요인,extracted,0,,0
+부진한 수익성,extracted,0,,0
+부진한 실적,extracted,0,,0
+북미 FAST 이동,extracted,0,,1
+분기 실적 계절성 완화,extracted,0,,0
+불확실성 해소,extracted,0,,1
+브랜드 포지셔닝,extracted,0,,1
+비수기 수익성 개선,extracted,0,,0
+비용 감소,extracted,0,,1
+비용 구조 악화,extracted,0,,1
+비용 부담 감소,extracted,0,,0
+비용 부담 증가,extracted,0,,0
+비용 증가 리스크,extracted,0,,0
+비용(Sell-Through 프로모션 등) 발생,extracted,0,,1
+비용증가,cost,0,,1
+비용통제,extracted,0,,1
+비즈니스 환경,extracted,0,,0
+"사업 방식, 고객 및 시장 포지션 변화 필요",extracted,0,,0
+사업모델 확장 노력,extracted,0,,1
+상호 관세,extracted,0,,1
+상호관세 결정,extracted,0,,1
+생산기지 이전 및 현지화 전략,extracted,0,,1
+생산지 조정 및 가격 정책 유연화,extracted,0,,1
+생산지 최적화,extracted,0,,1
+선진국 TV 수요 부진,extracted,0,,1
+선진국 소비 부진,extracted,0,,1
+성과,extracted,0,,0
+성과급,extracted,0,,1
+성수기,extracted,0,,1
+성수기효과부진,extracted,0,,1
+성장률,extracted,0,,0
+세트수요 회복,extracted,0,,1
+소비 수요 부진,extracted,0,,1
+소비 심리 반등,extracted,0,,0
+소비심리 부진,extracted,0,,1
+소비자 중저가 제품 선호,extracted,0,,1
+소비자 호평,extracted,0,,0
+소비자의 구매력 약화,extracted,0,,1
+소비재 매출,extracted,0,,0
+소폭 적자 예상,extracted,0,,0
+소프트웨어 서비스 강화 필요성,extracted,0,,0
+수요 감소 우려,extracted,0,,0
+수요 분화,extracted,0,,1
+수요 회복 지연,extracted,0,,1
+수요둔화,extracted,0,,1
+수요불확실성,extracted,0,,0
+수요의 반등 대응,extracted,0,,0
+수요회복,demand,0,,3
+수익개선,extracted,0,,0
+수익구조 안정화,extracted,0,,0
+수익성,performance,0,,3
+수익성 개선 효과,extracted,0,,0
+수익성 기대 부합,extracted,0,,0
+수익성 달성,extracted,0,,0
+수익성 방어,extracted,0,,0
+수익성 방어 여부,extracted,0,,0
+수익성 부진,extracted,0,,0
+수익성 상승,extracted,0,,0
+수익성 우려,extracted,0,,1
+수익성 유지,extracted,0,,0
+수익성 저하,extracted,0,,0
+수익성 점진적 개선,extracted,0,,0
+수익성 하락 가능성,extracted,0,,0
+수익성 회복 시점의 불확실성,extracted,0,,0
+수출비중 높은 기업의 노출,extracted,0,,0
+스마트 팩토리 기술 적용,extracted,0,,1
+스마트팩토리기술,extracted,0,,1
+스포츠 이벤트 등 수요 증가,extracted,0,,1
+시장 기대치 상회 실적,extracted,0,,0
+시장 회복 지연,extracted,0,,1
+시장지배력,extracted,0,,0
+신규 고객사 확보 및 국내 IT 고객사향 물량 확대,extracted,0,,1
+신규 고객사 확보 및 증설 물량 반영,extracted,0,,1
+신사업 투자 확대,extracted,0,,1
+신성장동력,extracted,0,,0
+실적,extracted,0,,0
+실적 감소,extracted,0,,0
+실적 기여 효과,extracted,0,,0
+실적 발목,extracted,0,,0
+실적 방어 어려움,extracted,0,,0
+실적 변동성 확대,extracted,0,,0
+실적 안정성,extracted,0,,0
+실적 우려 감소,extracted,0,,0
+실적 추가 하향 조정 위험,extracted,0,,0
+실적 하향 조정,extracted,0,,0
+실적 호조 가능성,extracted,0,,0
+실적 확대,extracted,0,,0
+실적개선,performance,0,,0
+실적부진,performance,0,,0
+실적에 대한 불안감,extracted,0,,0
+실적의 변동,extracted,0,,0
+실적컨센서스하회,performance,0,,0
+안정적 수익 창출,extracted,0,,0
+안정적 수익구조 확보,extracted,0,,0
+안정적인 OLED패널 공급망,extracted,0,,0
+안정적인 수익성 확보,extracted,0,,0
+안정적인 포트폴리오,extracted,0,,1
+업황 회복,extracted,0,,0
+업황 회복 지연,extracted,0,,1
+연결 실적 부진,extracted,0,,0
+연결 실적 하향,extracted,0,,0
+연결 영업이익 증가,extracted,0,,0
+연결/지분법 대상 실적 하향,extracted,0,,1
+연말 비용 반영,extracted,0,,1
+영업비용,extracted,0,,0
+영업비용 증가,extracted,0,,1
+영업이익 감소,extracted,0,,0
+영업이익 기대치 하회,extracted,0,,0
+영업이익 상향,extracted,0,,0
+영업이익 성장,extracted,0,,0
+영업이익 증가,extracted,0,,0
+영업이익 하락,extracted,0,,0
+영업이익 하향,extracted,0,,0
+영업이익 향상,extracted,0,,0
+영업이익률,extracted,0,,0
+영업이익률 상향,extracted,0,,0
+영업이익률 하락,extracted,0,,0
+영업이익률 회복,extracted,0,,0
+영업적자 전환,extracted,0,,1
+영업적자 증가,extracted,0,,0
+영업적자 지속,extracted,0,,0
+영업적자 확대,extracted,0,,0
+영업흑자 기대 어려움,extracted,0,,0
+완성차 수요 부진의 하방 위험,extracted,0,,0
+외형 부진,extracted,0,,0
+외형 성장,extracted,0,,0
+외형 성장 둔화,extracted,0,,0
+외형 역성장,extracted,0,,0
+우려,extracted,0,,0
+우려 대비 출하량 증가,extracted,0,,0
+운반비 상승,extracted,0,,0
+운송비용 하락,extracted,0,,1
+원가개선,cost,0,,0
+원부자재 및 운임비용 개선,extracted,0,,1
+원자재 및 운임비용 하락,extracted,0,,1
+원자재가격 하락,extracted,0,,1
+원재료 가격 하락,extracted,0,,1
+위험,extracted,0,,0
+유럽 소비 심리 반등,extracted,0,,1
+유럽 시장 수요,extracted,0,,0
+유럽의 규제,extracted,0,,0
+유럽지역 판매 감소,extracted,0,,1
+유로2024 이벤트,extracted,0,,1
+유지비용 증가,extracted,0,,0
+유통 물량 수준 감소,extracted,0,,0
+유통재고 건전화,extracted,0,,2
+이익 개선,extracted,0,,0
+이익 개선 둔화,extracted,0,,0
+이익 기여도 강화,extracted,0,,0
+이익 변동성,extracted,0,,0
+이익 체력 개선,extracted,0,,0
+이익의 동반성장,extracted,0,,0
+인버터형 에어컨,extracted,0,,1
+인프라 투자 감소,extracted,0,,1
+인플레이션,extracted,0,,1
+일회성 비용,extracted,0,,1
+자체 핵심 솔루션 내재화,extracted,0,,1
+잠재 위험,extracted,0,,0
+장기 선복 계약 갱신,extracted,0,,1
+재고 확충,extracted,0,,1
+재고증가,supply_chain,0,,1
+재료비 부담,extracted,0,,1
+적극적인 비용 투입,extracted,0,,1
+적자전환,extracted,0,,0
+적자폭 확대,extracted,0,,0
+전기세 설정 기능,extracted,0,,1
+전기차 부품 시장의 확대,extracted,0,,1
+전기차 수요 둔화,extracted,0,,1
+전기차 수요 둔화 우려,extracted,0,,1
+전력소비 문제 완화,extracted,0,,0
+전력소비 증가,extracted,0,,1
+전반적 수익성 증가,extracted,0,,0
+전방 수요 회복 지연,extracted,0,,2
+전방 시장 수요 둔화,extracted,0,,1
+전자제품 소비 부진,extracted,0,,0
+전자칠판 경쟁력 배가,extracted,0,,0
+전장 부문 실적 기여도 확대,extracted,0,,1
+전장부품 관련 기회,extracted,0,,0
+전장부품 실적 하락,extracted,0,,0
+전장부품 호실적,extracted,0,,0
+전장사업 성장 기대 감소,extracted,0,,0
+점유율 확대,extracted,0,,1
+정밀 타겟 광고,extracted,0,,1
+제품 믹스 도전적 시장 환경,extracted,0,,0
+제품 차별화,extracted,0,,0
+제품 판가 인상,extracted,0,,1
+제품믹스 부진,extracted,0,,0
+주가 반등,extracted,0,,0
+주가 반등 가능성,extracted,0,,0
+주가 상승 여력,extracted,0,,0
+주가 하락,extracted,0,,0
+주가 하방 리스크 감소,extracted,0,,0
+주력 사업의 시장 지위 강화,extracted,0,,1
+주주환원,extracted,0,,0
+중국 TV 업체의 점유율 확대,extracted,0,,1
+중국 세트업체 셀인 물량 증가,extracted,0,,1
+중국 업체의 부상,extracted,0,,1
+중단사업손실,extracted,0,,1
+중화권 경기 부양,extracted,0,,2
+지난 2년간의 부진,extracted,0,,1
+지역별 포트폴리오 개선,extracted,0,,1
+지정학적 리스크,extracted,0,,1
+차별화된 경험 제공,extracted,0,,1
+철강 관련 파생 관세,extracted,0,,1
+첨단기술 확보,extracted,0,,0
+체질개선,extracted,0,,0
+최악의 시나리오 회피,extracted,0,,0
+출하 반전,extracted,0,,0
+코로나특수효과소멸,extracted,0,,1
+코스트 절감 효과,extracted,0,,1
+클라우드 연결 확장,extracted,0,,1
+탄력적인 가동률 유지,extracted,0,,0
+트럼프2기 집권,extracted,0,,1
+파리올림픽,extracted,0,,1
+판가 인상,extracted,0,,2
+판매 감소세 완화,extracted,0,,0
+판매 부진 심화,extracted,0,,1
+판매 실적 역성장,extracted,0,,0
+판매 촉진 비용 증가,extracted,0,,1
+판매관리비 감소,extracted,0,,0
+판매비용 증가,extracted,0,,0
+판촉비 감소,extracted,0,,0
+패널 공급업체들의 가동률 조정,extracted,0,,1
+포트폴리오 전환,extracted,0,,2
+폴더블용 필름과 대형 디스플레이용 CoF 공급,extracted,0,,1
+프리미엄 경쟁력,extracted,0,,1
+프리미엄 매출 확대,extracted,0,,1
+플랫폼 매출 확대,extracted,0,,1
+플랫폼/서비스 이익,extracted,0,,1
+한국산 가전에 대한 상호 관세 및 Section 232의 범위 확대,extracted,0,,1
+해상물류 지연,extracted,0,,1
+흑자기조유지,performance,0,,0
+희망퇴직 일회성 비용 사라짐,extracted,0,,1

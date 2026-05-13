@@ -1,0 +1,133 @@
+// LGE HE ERP Database Schema
+// Generated for dbdiagram.io
+
+// ==========================================
+// Master Data Tables
+// ==========================================
+
+Table MD_PRODUCT {
+  PRODUCT_ID text [pk]
+  PRODUCT_NAME text
+  CATEGORY text
+  DISPLAY_TYPE text
+  SCREEN_SIZE integer
+  MODEL_YEAR integer
+  IS_PREMIUM text
+  HAS_WEBOS text
+}
+
+Table MD_ORG {
+  ORG_ID text [pk]
+  ORG_NAME text
+  REGION text
+  COUNTRY_CODE text
+  ORG_TYPE text
+}
+
+Table MD_CHANNEL {
+  CHANNEL_ID text [pk]
+  CHANNEL_NAME text
+  CHANNEL_TYPE text
+  TIER text
+}
+
+// ==========================================
+// Transaction Tables
+// ==========================================
+
+Table TR_SALES {
+  SALES_ID integer [pk, increment]
+  SALES_DATE text
+  PRODUCT_ID text [ref: > MD_PRODUCT.PRODUCT_ID]
+  ORG_ID text [ref: > MD_ORG.ORG_ID]
+  CHANNEL_ID text [ref: > MD_CHANNEL.CHANNEL_ID]
+  QTY integer
+  REVENUE_USD real
+  REVENUE_KRW real
+  WEBOS_REV_USD real
+  IS_B2B_SALES text
+  EXCHANGE_RATE real
+}
+
+Table TR_PURCHASE {
+  PURCHASE_ID integer [pk, increment]
+  PURCHASE_DATE text
+  PRODUCT_ID text [ref: > MD_PRODUCT.PRODUCT_ID]
+  ORG_ID text [ref: > MD_ORG.ORG_ID]
+  QTY integer
+  PANEL_PRICE_USD real
+  DRAM_PRICE_USD_PER_GB real
+  RAW_MATERIAL_INDEX real
+  TOTAL_COGS_USD real
+}
+
+Table TR_EXPENSE {
+  EXPENSE_ID integer [pk, increment]
+  EXPENSE_DATE text
+  ORG_ID text [ref: > MD_ORG.ORG_ID]
+  EXPENSE_TYPE text
+  LOGISTICS_COST real
+  MARKETING_COST real
+  PROMOTION_COST real
+  LABOR_COST real
+  TOTAL_EXPENSE_KRW real
+}
+
+// ==========================================
+// External Data Tables
+// ==========================================
+
+Table EXT_MACRO {
+  DATA_DATE text [pk]
+  COUNTRY_CODE text [pk]
+  EXCHANGE_RATE_KRW_USD real
+  INTEREST_RATE real
+  MORTGAGE_RATE real
+  INFLATION_RATE real
+  GDP_GROWTH_RATE real
+  CSI_INDEX real
+  HOUSING_STARTS real
+}
+
+Table EXT_MARKET {
+  DATA_DATE text [pk]
+  REGION text [pk]
+  TOTAL_SHIPMENT_10K real
+  LGE_MARKET_SHARE real
+  COMPETITOR_PROMO_IDX real
+  SEASONALITY_INDEX real
+  SCFI_INDEX real
+  BDI_INDEX real
+  OTT_SUBSCRIBER_GROWTH real
+}
+
+Table EXT_TECH_LIFE_CYCLE {
+  DATA_DATE text [pk]
+  DISPLAY_TYPE text [pk]
+  SCREEN_SIZE_RANGE text [pk]
+  AVG_REPLACEMENT_YEARS real
+  PREMIUM_MIX_RATIO real
+  FACTORY_UTILIZATION real
+}
+
+// ==========================================
+// Table Groups for visual organization
+// ==========================================
+
+TableGroup MasterData {
+  MD_PRODUCT
+  MD_ORG
+  MD_CHANNEL
+}
+
+TableGroup Transactions {
+  TR_SALES
+  TR_PURCHASE
+  TR_EXPENSE
+}
+
+TableGroup ExternalData {
+  EXT_MACRO
+  EXT_MARKET
+  EXT_TECH_LIFE_CYCLE
+}

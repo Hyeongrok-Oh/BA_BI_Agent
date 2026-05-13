@@ -1,0 +1,54 @@
+# TV(HE) 문단 필터링용 키워드 사전
+# LG전자 Consensus/Dart 문서에서 TV 관련 문단만 추출
+
+version: "1.0"
+purpose: "TV/HE 문단 필터링"
+
+# 1. TV/HE 식별 키워드 (이 중 하나라도 있으면 TV 관련)
+tv_identifiers:
+  # 사업부
+  - HE
+  - HE본부
+  - HE사업부
+  - Home Entertainment
+  - 홈엔터테인먼트
+
+  # 제품
+  - TV
+  - OLED
+  - QNED
+  - webOS
+  - 디스플레이
+  - 패널
+  - 사운드바
+
+# 2. 제외 키워드 (이것만 있고 TV 키워드 없으면 제외)
+exclude_only:
+  # H&A (가전)
+  - 냉장고
+  - 세탁기
+  - 에어컨
+  - 건조기
+  - 히트펌프
+  - HVAC
+
+  # VS (전장)
+  - 전장
+  - 전기차
+  - EV충전
+  - 파워트레인
+  - Infotainment
+  - IVI
+
+  # BS
+  - 모니터
+  - 노트북
+  - 그램
+
+# 3. 컨텍스트 키워드 (TV 키워드와 함께 있으면 관련성 높음)
+context_boost:
+  - LG전자
+  - 066570
+  - 프리미엄
+  - 대형
+  - 플랫폼

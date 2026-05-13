@@ -1,0 +1,21 @@
+# Core
+openai>=1.0.0
+neo4j>=5.0.0
+streamlit>=1.28.0
+pydantic>=2.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Text processing
+markdown>=3.5.0
+
+# API clients
+requests>=2.31.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Visualization
+pyvis>=0.3.0

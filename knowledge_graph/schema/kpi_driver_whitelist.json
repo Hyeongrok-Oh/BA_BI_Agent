@@ -1,0 +1,675 @@
+{
+  "version": "1.0",
+  "description": "KPI별 허용 Driver Whitelist (회계/비즈니스 구조 기반)",
+  "generated_by": "LLM (gpt-4o-mini)",
+  "generated_at": "2026-01-03T14:27:41.190433",
+  "total_kpis": 12,
+  "total_relations": 83,
+  "whitelists": {
+    "영업이익": {
+      "kpi_id": "영업이익",
+      "kpi_name_kr": "영업이익",
+      "kpi_category": "성과",
+      "allowed_drivers": [
+        {
+          "driver_id": "출하량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "출하량이 증가하면 매출이 증가하여 영업이익에 긍정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "판매량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "판매량이 증가하면 직접적으로 영업이익이 증가한다."
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV 평균판매가가 상승하면 매출이 증가하여 영업이익에 긍정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 매출총이익률이 감소하여 영업이익에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "제조원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "제조원가가 증가하면 원가가 상승하여 영업이익에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비가 증가하면 총비용이 상승하여 영업이익에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "패널원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "패널은 TV 원가의 40-50%를 차지하며 매출총이익률에 직접 영향."
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "리베이트비용이 증가하면 총비용이 상승하여 영업이익에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "프로모션비용이 증가하면 총비용이 상승하여 영업이익에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "OLED 비중이 증가하면 프리미엄 제품 판매가 증가하여 영업이익에 긍정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "프리미엄 제품 비중이 증가하면 평균판매가가 상승하여 영업이익에 긍정적인 영향을 미친다."
+        }
+      ]
+    },
+    "영업이익률": {
+      "kpi_id": "영업이익률",
+      "kpi_name_kr": "영업이익률",
+      "kpi_category": "성과",
+      "allowed_drivers": [
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV 평균 판매가는 매출액에 직접적인 영향을 미쳐 영업이익률을 증가시킨다."
+        },
+        {
+          "driver_id": "제조원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "제조원가는 제품 생산에 필요한 비용으로, 증가 시 영업이익률을 감소시킨다."
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 매출액이 감소하여 영업이익률에 부정적인 영향을 미친다."
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "리베이트비용이 증가하면 판매에 따른 비용이 증가하여 영업이익률이 하락할 수 있다."
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비는 제품 유통에 필요한 비용으로, 증가 시 영업이익률을 감소시킨다."
+        },
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "프로모션비용이 증가하면 판매 촉진을 위한 비용이 증가하여 영업이익률에 부정적 영향을 미친다."
+        },
+        {
+          "driver_id": "패널원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "패널은 TV 원가의 40-50%를 차지하며 매출총이익률에 직접 영향"
+        },
+        {
+          "driver_id": "원재료비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "원재료비가 증가하면 제품 생산 비용이 증가하여 영업이익률이 감소한다."
+        },
+        {
+          "driver_id": "경쟁사가격",
+          "expected_polarity": "mixed",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "경쟁사가격이 높아지면 자사 제품의 가격을 인상할 수 있지만, 가격 인상이 소비자 수요에 영향을 줄 수 있다."
+        }
+      ]
+    },
+    "매출총이익률": {
+      "kpi_id": "매출총이익률",
+      "kpi_name_kr": "매출총이익률",
+      "kpi_category": "성과",
+      "allowed_drivers": [
+        {
+          "driver_id": "패널원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "패널은 TV 원가의 40-50%를 차지하며 매출총이익률에 직접 영향"
+        },
+        {
+          "driver_id": "제조원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "제조원가는 전체 원가의 주요 요소로, 매출총이익률에 직접적인 영향을 미침"
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV 평균판매가는 매출을 직접적으로 증가시켜 매출총이익률에 긍정적 영향을 미침"
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 매출이 감소하여 매출총이익률에 부정적 영향을 미침"
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 제품의 비중이 높아지면 평균 판매가가 상승하여 매출총이익률에 긍정적 영향을 미침"
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "리베이트비용이 증가하면 총비용이 증가하여 매출총이익률에 부정적 영향을 미침"
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비는 제품의 총 원가에 포함되어 매출총이익률에 직접적인 영향을 미침"
+        }
+      ]
+    },
+    "매출": {
+      "kpi_id": "매출",
+      "kpi_name_kr": "매출",
+      "kpi_category": "성과",
+      "allowed_drivers": [
+        {
+          "driver_id": "출하량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "출하량이 증가하면 판매량도 증가하여 TV 매출이 상승한다."
+        },
+        {
+          "driver_id": "판매량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "소비자에게 판매된 최종 수량이 증가하면 TV 매출이 직접적으로 증가한다."
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV의 평균 판매가가 상승하면 매출액이 증가한다."
+        },
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "OLED 비중이 증가하면 프리미엄 가격으로 인해 매출이 증가할 가능성이 높다."
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 제품의 비중이 높아지면 평균 판매가가 상승하여 매출이 증가한다."
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 판매 가격이 낮아져 매출이 감소할 수 있다."
+        },
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "medium",
+          "rationale": "프로모션 비용이 증가하면 소비자 수요가 증가하여 매출이 증가할 수 있다."
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "medium",
+          "rationale": "리베이트 비용이 증가하면 유통업체의 판매 유인이 증가하여 매출이 증가할 수 있다."
+        }
+      ]
+    },
+    "OLED매출": {
+      "kpi_id": "OLED매출",
+      "kpi_name_kr": "OLED TV 매출",
+      "kpi_category": "매출구조",
+      "allowed_drivers": [
+        {
+          "driver_id": "출하량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "출하량이 증가하면 OLED TV 매출이 직접적으로 증가하기 때문입니다."
+        },
+        {
+          "driver_id": "판매량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "판매량이 증가하면 소비자에게 판매된 OLED TV 수가 늘어나 매출이 증가합니다."
+        },
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "전체 TV 중 OLED 비중이 높아지면 OLED TV 매출이 증가하는 경향이 있습니다."
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV 평균판매가가 상승하면 매출이 직접적으로 증가합니다."
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 제품의 비중이 높아지면 높은 가격으로 매출이 증가할 수 있습니다."
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 매출이 감소하는 경향이 있습니다."
+        },
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "medium",
+          "rationale": "프로모션 비용이 증가하면 소비자 수요가 증가하여 매출이 증가할 수 있습니다."
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "medium",
+          "rationale": "리베이트 비용이 증가하면 유통업체의 판매 유인이 증가하여 매출이 증가할 수 있습니다."
+        }
+      ]
+    },
+    "플랫폼매출": {
+      "kpi_id": "플랫폼매출",
+      "kpi_name_kr": "webOS 플랫폼 매출",
+      "kpi_category": "매출구조",
+      "allowed_drivers": [
+        {
+          "driver_id": "webOS인당매출",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "webOS 사용자당 평균 매출이 증가하면 전체 플랫폼 매출이 직접적으로 증가함"
+        },
+        {
+          "driver_id": "webOS설치기반",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "누적 webOS TV 판매 대수가 증가하면 콘텐츠 및 광고 매출이 증가할 가능성이 높음"
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "TV 평균 판매가가 상승하면 매출 총액이 증가하여 플랫폼 매출에 긍정적인 영향을 미침"
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 제품의 비중이 높아지면 더 높은 가격대의 제품이 판매되어 플랫폼 매출이 증가함"
+        },
+        {
+          "driver_id": "모델믹스변화",
+          "expected_polarity": "mixed",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "모델 믹스 변화에 따라 특정 모델의 매출이 증가하거나 감소할 수 있어 플랫폼 매출에 복합적인 영향을 미침"
+        }
+      ]
+    },
+    "평균판매가": {
+      "kpi_id": "평균판매가",
+      "kpi_name_kr": "TV 평균판매가",
+      "kpi_category": "가격/믹스",
+      "allowed_drivers": [
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "OLED TV는 일반 TV보다 평균판매가가 높아 OLED 비중 증가 시 평균판매가 상승"
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "프리미엄 제품의 판매 비중이 높아지면 평균판매가가 상승하는 경향이 있음"
+        },
+        {
+          "driver_id": "모델믹스변화",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "고급 모델의 비중이 증가하면 평균판매가가 상승할 수 있음"
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 높아지면 평균판매가가 낮아지는 경향이 있음"
+        },
+        {
+          "driver_id": "경쟁사가격",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "경쟁사 가격이 낮아지면 자사 제품의 평균판매가에 부정적인 영향을 미칠 수 있음"
+        }
+      ]
+    },
+    "프리미엄믹스": {
+      "kpi_id": "프리미엄믹스",
+      "kpi_name_kr": "프리미엄 믹스",
+      "kpi_category": "가격/믹스",
+      "allowed_drivers": [
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "프리미엄 제품의 판매 비중이 높아질수록 프리미엄 믹스 KPI가 증가하기 때문입니다."
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "TV 평균 판매가가 상승하면 프리미엄 믹스 KPI도 함께 증가하는 경향이 있습니다."
+        },
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "strong",
+          "rationale": "OLED TV는 일반적으로 프리미엄 제품으로 분류되며, 비중이 높아질수록 프리미엄 믹스가 증가합니다."
+        },
+        {
+          "driver_id": "모델믹스변화",
+          "expected_polarity": "+",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 모델의 추가나 비중 변화가 프리미엄 믹스에 직접적인 영향을 미치기 때문입니다."
+        }
+      ]
+    },
+    "매출원가": {
+      "kpi_id": "매출원가",
+      "kpi_name_kr": "매출원가",
+      "kpi_category": "비용/리스크",
+      "allowed_drivers": [
+        {
+          "driver_id": "패널원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "패널은 TV 원가의 40-50%를 차지하며 매출총이익률에 직접 영향"
+        },
+        {
+          "driver_id": "제조원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "제조원가는 생산 과정에서 발생하는 주요 비용으로 매출원가에 직접적인 영향을 미침"
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비는 제품의 유통 과정에서 발생하는 비용으로 매출원가에 포함됨"
+        },
+        {
+          "driver_id": "원재료비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "원재료비는 TV 제조에 필요한 자재의 비용으로 매출원가에 직접적인 영향을 미침"
+        },
+        {
+          "driver_id": "달러환율",
+          "expected_polarity": "-",
+          "effect_type": "fx",
+          "strength": "medium",
+          "rationale": "달러 환율 상승 시 수입 원자재 및 부품 비용이 증가하여 매출원가에 영향을 줌"
+        },
+        {
+          "driver_id": "에너지가격",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "에너지가격 상승은 제조 과정에서의 에너지 비용 증가로 이어져 매출원가에 영향을 미침"
+        }
+      ]
+    },
+    "판관비": {
+      "kpi_id": "판관비",
+      "kpi_name_kr": "판관비",
+      "kpi_category": "비용/리스크",
+      "allowed_drivers": [
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "프로모션 비용은 판관비의 주요 구성 요소로, 증가 시 총 비용이 상승하여 판관비를 증가시킴"
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "리베이트 비용은 유통업체에 지급되는 비용으로, 판관비에 직접적으로 영향을 미침"
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "물류비는 제품 유통 과정에서 발생하는 비용으로, 판관비의 중요한 요소임"
+        },
+        {
+          "driver_id": "판매량",
+          "expected_polarity": "+",
+          "effect_type": "volume",
+          "strength": "medium",
+          "rationale": "판매량이 증가하면 마케팅 및 판촉 활동이 증가하여 판관비가 상승할 수 있음"
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "할인율이 증가하면 매출이 감소할 수 있으며, 이로 인해 판관비의 비율이 증가할 수 있음"
+        }
+      ]
+    },
+    "재고리스크": {
+      "kpi_id": "재고리스크",
+      "kpi_name_kr": "재고 리스크",
+      "kpi_category": "비용/리스크",
+      "allowed_drivers": [
+        {
+          "driver_id": "출하량",
+          "expected_polarity": "-",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "출하량이 증가하면 재고 수준이 높아져 재고 리스크가 증가할 수 있다."
+        },
+        {
+          "driver_id": "판매량",
+          "expected_polarity": "-",
+          "effect_type": "volume",
+          "strength": "strong",
+          "rationale": "판매량이 감소하면 재고가 쌓여 재고 리스크가 증가할 수 있다."
+        },
+        {
+          "driver_id": "모델믹스변화",
+          "expected_polarity": "mixed",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "모델 믹스 변화는 특정 모델의 재고 리스크를 증가시키거나 감소시킬 수 있다."
+        },
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "할인율이 증가하면 재고 소진이 촉진되지만, 동시에 가격 하락으로 인한 손실이 발생할 수 있다."
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "-",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 제품 비중이 높아지면 재고 리스크가 감소할 수 있지만, 특정 모델의 재고가 쌓일 위험도 존재한다."
+        },
+        {
+          "driver_id": "패널원가",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "strong",
+          "rationale": "패널은 TV 원가의 40-50%를 차지하며 매출총이익률에 직접 영향."
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비가 증가하면 재고 유지 비용이 증가하여 재고 리스크가 높아질 수 있다."
+        }
+      ]
+    },
+    "판매량": {
+      "kpi_id": "판매량",
+      "kpi_name_kr": "판매량",
+      "kpi_category": "성과",
+      "allowed_drivers": [
+        {
+          "driver_id": "할인율",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "할인율이 증가하면 가격 경쟁력이 높아져 판매량이 증가한다."
+        },
+        {
+          "driver_id": "프로모션비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "strong",
+          "rationale": "프로모션 비용이 증가하면 소비자 관심과 수요가 증가하여 판매량이 증가한다."
+        },
+        {
+          "driver_id": "TV평균판매가",
+          "expected_polarity": "-",
+          "effect_type": "price",
+          "strength": "strong",
+          "rationale": "평균판매가가 높아지면 가격 부담으로 인해 판매량이 감소할 수 있다 (가격탄력성)."
+        },
+        {
+          "driver_id": "경쟁사가격",
+          "expected_polarity": "+",
+          "effect_type": "price",
+          "strength": "medium",
+          "rationale": "경쟁사 가격이 높아지면 상대적 가격 경쟁력이 높아져 판매량이 증가할 수 있다."
+        },
+        {
+          "driver_id": "리베이트비용",
+          "expected_polarity": "+",
+          "effect_type": "demand",
+          "strength": "medium",
+          "rationale": "리베이트 비용이 증가하면 유통업체의 판매 유인이 증가하여 판매량이 증가한다."
+        },
+        {
+          "driver_id": "OLED비중",
+          "expected_polarity": "mixed",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "OLED 비중 증가는 프리미엄 전략으로 인해 전체 판매량에 복합적인 영향을 미친다."
+        },
+        {
+          "driver_id": "프리미엄비중",
+          "expected_polarity": "mixed",
+          "effect_type": "mix",
+          "strength": "medium",
+          "rationale": "프리미엄 비중 증가는 고가 전략으로 인해 전체 판매량에 복합적인 영향을 미친다."
+        },
+        {
+          "driver_id": "물류비",
+          "expected_polarity": "-",
+          "effect_type": "cost",
+          "strength": "medium",
+          "rationale": "물류비 상승은 제품 가격에 전가되어 판매량에 부정적 영향을 미칠 수 있다."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,190 @@
+# Event 정규화 사전
+# 동의어/유사 표현 → 표준 Event명 매핑
+
+version: "1.0"
+
+# 지정학/정책 이벤트
+홍해사태:
+  canonical: "홍해 사태"
+  canonical_en: "Red Sea Crisis"
+  category: "geopolitical"
+  aliases:
+    - "홍해 사태"
+    - "홍해 위기"
+    - "Red Sea Crisis"
+    - "후티 반군 공격"
+    - "후티 공격"
+    - "예멘 후티"
+    - "홍해 해상운임"
+    - "Houthi attack"
+    - "홍해 선박 공격"
+
+트럼프관세:
+  canonical: "트럼프 관세 정책"
+  canonical_en: "Trump Tariff Policy"
+  category: "policy"
+  aliases:
+    - "트럼프 관세"
+    - "미국 보편관세"
+    - "Trump Tariff"
+    - "Section 232"
+    - "미국 가전 관세"
+    - "25% 관세"
+    - "트럼프 무역정책"
+    - "상호관세"
+
+우크라이나전쟁:
+  canonical: "우크라이나 전쟁"
+  canonical_en: "Russia-Ukraine War"
+  category: "geopolitical"
+  aliases:
+    - "러시아 우크라이나"
+    - "우크라이나 사태"
+    - "Russia Ukraine War"
+    - "러우전쟁"
+
+EU탄소국경세:
+  canonical: "EU 탄소국경세"
+  canonical_en: "EU CBAM"
+  category: "policy"
+  aliases:
+    - "탄소국경세"
+    - "CBAM"
+    - "EU 탄소규제"
+    - "Carbon Border Tax"
+
+# 시장/패널 이벤트
+LCD가격조정:
+  canonical: "LCD 패널 가격 변동"
+  canonical_en: "LCD Panel Price Change"
+  category: "market"
+  aliases:
+    - "LCD 가격 인하"
+    - "LCD 패널 가격 하락"
+    - "LCD 가격 인상"
+    - "패널 가격 상승"
+    - "패널 가격 하락"
+    - "LCD 가격 변동"
+
+BOE증설:
+  canonical: "BOE 생산 확대"
+  canonical_en: "BOE Capacity Expansion"
+  category: "company"
+  aliases:
+    - "BOE 10.5세대"
+    - "BOE LCD 증설"
+    - "BOE 생산 증가"
+    - "BOE 패널 생산"
+
+LGD실적:
+  canonical: "LG디스플레이 실적"
+  canonical_en: "LG Display Earnings"
+  category: "company"
+  aliases:
+    - "LGD 실적"
+    - "LG디스플레이 분기실적"
+    - "LGD 영업이익"
+    - "LG Display"
+
+삼성디스플레이OLED:
+  canonical: "삼성디스플레이 OLED"
+  canonical_en: "Samsung Display OLED"
+  category: "company"
+  aliases:
+    - "삼성 OLED"
+    - "SDC OLED"
+    - "삼성 디스플레이"
+
+# 거시경제 이벤트
+달러강세:
+  canonical: "달러 강세"
+  canonical_en: "Strong Dollar"
+  category: "macro_economy"
+  aliases:
+    - "원달러 환율 상승"
+    - "환율 급등"
+    - "1400원 돌파"
+    - "달러 인덱스 상승"
+    - "원화 약세"
+
+금리동결:
+  canonical: "미국 금리 결정"
+  canonical_en: "Fed Rate Decision"
+  category: "macro_economy"
+  aliases:
+    - "연준 금리"
+    - "Fed 금리"
+    - "FOMC"
+    - "금리 인상"
+    - "금리 동결"
+    - "금리 인하"
+
+# 경쟁/기업 이벤트
+LG전자실적:
+  canonical: "LG전자 실적 발표"
+  canonical_en: "LG Electronics Earnings"
+  category: "company"
+  aliases:
+    - "LG전자 분기실적"
+    - "LG전자 영업이익"
+    - "LG HE 실적"
+    - "LG TV 실적"
+
+삼성전자실적:
+  canonical: "삼성전자 실적 발표"
+  canonical_en: "Samsung Electronics Earnings"
+  category: "company"
+  aliases:
+    - "삼성전자 분기실적"
+    - "삼성 VD 실적"
+    - "삼성 TV 실적"
+
+TCL점유율:
+  canonical: "TCL 시장 확대"
+  canonical_en: "TCL Market Expansion"
+  category: "competition"
+  aliases:
+    - "TCL 점유율"
+    - "TCL 성장"
+    - "TCL 북미"
+    - "중국 TV 브랜드 성장"
+
+# 수요/시장 이벤트
+블랙프라이데이:
+  canonical: "블랙프라이데이 세일"
+  canonical_en: "Black Friday Sale"
+  category: "demand"
+  aliases:
+    - "블프"
+    - "Black Friday"
+    - "연말 세일"
+    - "미국 연말 쇼핑"
+
+쌍십일절:
+  canonical: "중국 광군제"
+  canonical_en: "Singles Day (11.11)"
+  category: "demand"
+  aliases:
+    - "쌍십일"
+    - "11.11"
+    - "광군제"
+    - "Singles Day"
+    - "중국 쇼핑절"
+
+유로2024:
+  canonical: "UEFA 유로 2024"
+  canonical_en: "UEFA Euro 2024"
+  category: "demand"
+  aliases:
+    - "유로 2024"
+    - "Euro 2024"
+    - "유럽축구선수권"
+    - "UEFA 유로"
+
+# 제외 대상
+exclude:
+  - "광고"
+  - "주가"
+  - "투자의견"
+  - "목표주가"
+  - "애널리스트"

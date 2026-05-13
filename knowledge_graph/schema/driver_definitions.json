@@ -1,0 +1,408 @@
+{
+  "version": "3.0",
+  "description": "LG전자 HE사업부 Driver 정의 (40개, 3 Tier)",
+  "drivers": {
+    "tier1": {
+      "description": "ERP 직접 검증 가능 (18개)",
+      "validation_method": "ERP",
+      "drivers": [
+        {
+          "id": "출하량",
+          "name": "Sell-In Units",
+          "name_kr": "출하량",
+          "category": "Volume/Mix",
+          "description": "공장에서 유통으로 출하된 수량",
+          "example_sentence": "출하량 증가로 매출이 확대되었다",
+          "erp_table": "TR_SALES",
+          "erp_column": "QTY"
+        },
+        {
+          "id": "판매량",
+          "name": "Sell-Out Units",
+          "name_kr": "판매량",
+          "category": "Volume/Mix",
+          "description": "소비자에게 판매된 최종 수량",
+          "example_sentence": "판매량 감소로 재고가 증가했다",
+          "erp_table": "TR_SALES",
+          "erp_column": "SELLOUT_QTY"
+        },
+        {
+          "id": "OLED비중",
+          "name": "OLED Mix",
+          "name_kr": "OLED 비중",
+          "category": "Volume/Mix",
+          "description": "전체 TV 중 OLED 판매 비중",
+          "example_sentence": "OLED 비중 확대로 수익성이 개선되었다",
+          "erp_table": "TR_SALES",
+          "erp_column": "OLED_MIX_RATIO"
+        },
+        {
+          "id": "프리미엄비중",
+          "name": "Premium Mix",
+          "name_kr": "프리미엄 비중",
+          "category": "Volume/Mix",
+          "description": "프리미엄 제품 판매 비중",
+          "example_sentence": "프리미엄 믹스 개선으로 ASP가 상승했다",
+          "erp_table": "EXT_TECH_LIFE_CYCLE",
+          "erp_column": "PREMIUM_MIX_RATIO"
+        },
+        {
+          "id": "모델믹스변화",
+          "name": "Model Mix Shift",
+          "name_kr": "모델 믹스 변화",
+          "category": "Volume/Mix",
+          "description": "제품 라인업 구성 변화",
+          "example_sentence": "대형 TV 비중 확대로 ASP가 상승했다",
+          "erp_table": "TR_SALES",
+          "erp_column": "SIZE_MIX"
+        },
+        {
+          "id": "TV평균판매가",
+          "name": "ASP (TV)",
+          "name_kr": "TV 평균판매가",
+          "category": "Price/Promotion",
+          "description": "TV 평균 판매 단가",
+          "example_sentence": "ASP 하락으로 매출 성장이 제한되었다",
+          "erp_table": "TR_SALES",
+          "erp_column": "REVENUE_USD/QTY"
+        },
+        {
+          "id": "할인율",
+          "name": "Discount Rate",
+          "name_kr": "할인율",
+          "category": "Price/Promotion",
+          "description": "평균 할인율",
+          "example_sentence": "할인율 확대로 마진이 축소되었다",
+          "erp_table": "TR_SALES",
+          "erp_column": "DISCOUNT_RATE"
+        },
+        {
+          "id": "프로모션비용",
+          "name": "Promotion Cost",
+          "name_kr": "프로모션 비용",
+          "category": "Price/Promotion",
+          "description": "판촉 비용",
+          "example_sentence": "프로모션 비용 증가로 영업이익이 감소했다",
+          "erp_table": "TR_EXPENSE",
+          "erp_column": "PROMOTION_COST"
+        },
+        {
+          "id": "리베이트비용",
+          "name": "Rebate Expense",
+          "name_kr": "리베이트 비용",
+          "category": "Price/Promotion",
+          "description": "유통 리베이트 비용",
+          "example_sentence": "리베이트 확대로 판관비가 증가했다",
+          "erp_table": "TR_EXPENSE",
+          "erp_column": "REBATE_COST"
+        },
+        {
+          "id": "패널원가",
+          "name": "Panel Cost",
+          "name_kr": "패널 원가",
+          "category": "Cost",
+          "description": "LCD/OLED 패널 구매 비용",
+          "example_sentence": "패널 가격 상승으로 원가 부담이 증가했다",
+          "erp_table": "TR_PURCHASE",
+          "erp_column": "PANEL_PRICE_USD"
+        },
+        {
+          "id": "제조원가",
+          "name": "Manufacturing Cost",
+          "name_kr": "제조 원가",
+          "category": "Cost",
+          "description": "생산 관련 비용 (인건비, 가동률 등)",
+          "example_sentence": "제조 원가 절감으로 수익성이 개선되었다",
+          "erp_table": "TR_PURCHASE",
+          "erp_column": "MFG_COST_USD"
+        },
+        {
+          "id": "물류비",
+          "name": "Logistics Cost",
+          "name_kr": "물류비",
+          "category": "Cost",
+          "description": "운송, 창고, 배송 비용",
+          "example_sentence": "물류비 상승으로 마진이 압박받았다",
+          "erp_table": "TR_EXPENSE",
+          "erp_column": "LOGISTICS_COST"
+        },
+        {
+          "id": "품질보증비",
+          "name": "Warranty Cost",
+          "name_kr": "품질보증비",
+          "category": "Cost",
+          "description": "A/S, 품질 보증 비용",
+          "example_sentence": "품질보증비 증가로 비용이 확대되었다",
+          "erp_table": "TR_EXPENSE",
+          "erp_column": "WARRANTY_COST"
+        },
+        {
+          "id": "원재료비",
+          "name": "Material Cost",
+          "name_kr": "원재료비",
+          "category": "Cost",
+          "description": "원자재 구매 비용",
+          "example_sentence": "원재료비 하락으로 원가가 개선되었다",
+          "erp_table": "TR_PURCHASE",
+          "erp_column": "RAW_MATERIAL_INDEX"
+        },
+        {
+          "id": "달러환율",
+          "name": "FX USD/KRW Exposure",
+          "name_kr": "달러/원 환율 노출",
+          "category": "FX",
+          "description": "원/달러 환율 변동 영향",
+          "example_sentence": "환율 상승으로 수출 경쟁력이 개선되었다",
+          "erp_table": "EXT_MACRO",
+          "erp_column": "EXCHANGE_RATE_KRW_USD"
+        },
+        {
+          "id": "유로환율",
+          "name": "FX EUR/KRW Exposure",
+          "name_kr": "유로/원 환율 노출",
+          "category": "FX",
+          "description": "원/유로 환율 변동 영향",
+          "example_sentence": "유로 약세로 유럽 매출이 감소했다",
+          "erp_table": "EXT_MACRO",
+          "erp_column": "EXCHANGE_RATE_KRW_EUR"
+        },
+        {
+          "id": "webOS인당매출",
+          "name": "webOS ARPU",
+          "name_kr": "webOS 인당매출",
+          "category": "Platform",
+          "description": "webOS 사용자당 평균 매출",
+          "example_sentence": "webOS ARPU 상승으로 플랫폼 수익이 확대되었다",
+          "erp_table": "TR_SALES",
+          "erp_column": "WEBOS_ARPU"
+        },
+        {
+          "id": "webOS설치기반",
+          "name": "webOS Installed Base",
+          "name_kr": "webOS 설치기반",
+          "category": "Platform",
+          "description": "누적 webOS TV 판매 대수",
+          "example_sentence": "설치기반 확대로 광고 수익이 증가했다",
+          "erp_table": "TR_SALES",
+          "erp_column": "WEBOS_INSTALLED_BASE"
+        }
+      ]
+    },
+    "tier2": {
+      "description": "Proxy 기반 검증 (14개)",
+      "validation_method": "PROXY",
+      "drivers": [
+        {
+          "id": "글로벌TV수요",
+          "name": "Global TV Demand Index",
+          "name_kr": "글로벌 TV 수요지수",
+          "category": "수요/시장",
+          "description": "전세계 TV 수요 동향",
+          "example_sentence": "글로벌 TV 수요 부진으로 출하량이 감소했다",
+          "proxy_source": "Omdia",
+          "proxy_indicator": "TV Shipment Forecast"
+        },
+        {
+          "id": "북미TV수요",
+          "name": "North America TV Demand",
+          "name_kr": "북미 TV 수요",
+          "category": "수요/시장",
+          "description": "북미 지역 TV 수요",
+          "example_sentence": "북미 수요 회복으로 매출이 증가했다",
+          "proxy_source": "NPD",
+          "proxy_indicator": "NA TV Market Size"
+        },
+        {
+          "id": "유럽TV수요",
+          "name": "Europe TV Demand",
+          "name_kr": "유럽 TV 수요",
+          "category": "수요/시장",
+          "description": "유럽 지역 TV 수요",
+          "example_sentence": "유럽 수요 둔화로 실적이 부진했다",
+          "proxy_source": "GfK",
+          "proxy_indicator": "EU TV Market Size"
+        },
+        {
+          "id": "중국TV수요",
+          "name": "China TV Demand",
+          "name_kr": "중국 TV 수요",
+          "category": "수요/시장",
+          "description": "중국 지역 TV 수요",
+          "example_sentence": "중국 수요 약세가 지속되었다",
+          "proxy_source": "AVC",
+          "proxy_indicator": "China TV Sell-through"
+        },
+        {
+          "id": "교체주기",
+          "name": "Replacement Cycle Index",
+          "name_kr": "교체주기 지수",
+          "category": "수요/시장",
+          "description": "TV 교체 수요 주기",
+          "example_sentence": "교체 수요 증가로 판매가 확대되었다",
+          "proxy_source": "Internal",
+          "proxy_indicator": "Avg TV Age"
+        },
+        {
+          "id": "경쟁사가격",
+          "name": "Competitor Price Index",
+          "name_kr": "경쟁사 가격지수",
+          "category": "경쟁/가격",
+          "description": "경쟁사 대비 가격 수준",
+          "example_sentence": "경쟁사 가격 인하로 가격 경쟁이 심화되었다",
+          "proxy_source": "Market Research",
+          "proxy_indicator": "Competitor ASP"
+        },
+        {
+          "id": "경쟁사점유율",
+          "name": "Competitor Market Share",
+          "name_kr": "경쟁사 점유율",
+          "category": "경쟁/가격",
+          "description": "주요 경쟁사 시장 점유율",
+          "example_sentence": "삼성 점유율 확대로 경쟁이 심화되었다",
+          "proxy_source": "Omdia",
+          "proxy_indicator": "Brand Market Share"
+        },
+        {
+          "id": "중국업체압박",
+          "name": "China Brand Pressure",
+          "name_kr": "중국업체 압박",
+          "category": "경쟁/가격",
+          "description": "중국 브랜드의 시장 공세",
+          "example_sentence": "중국업체 저가 공세로 마진이 축소되었다",
+          "proxy_source": "Omdia",
+          "proxy_indicator": "China Brand Share"
+        },
+        {
+          "id": "패널가격지수",
+          "name": "Panel Price Index",
+          "name_kr": "패널가격 지수",
+          "category": "비용/환경",
+          "description": "LCD/OLED 패널 시장 가격",
+          "example_sentence": "패널 가격 하락으로 원가가 개선되었다",
+          "proxy_source": "WitsView",
+          "proxy_indicator": "Panel Price Trend"
+        },
+        {
+          "id": "해상운임",
+          "name": "Freight Rate Index",
+          "name_kr": "해상운임 지수",
+          "category": "비용/환경",
+          "description": "해상 운송 비용 (SCFI 등)",
+          "example_sentence": "운임 급등으로 물류비가 증가했다",
+          "proxy_source": "Shanghai Shipping Exchange",
+          "proxy_indicator": "SCFI Index"
+        },
+        {
+          "id": "에너지가격",
+          "name": "Energy Price Index",
+          "name_kr": "에너지가격 지수",
+          "category": "비용/환경",
+          "description": "전력, 가스 등 에너지 비용",
+          "example_sentence": "에너지 비용 상승으로 제조원가가 증가했다",
+          "proxy_source": "EIA",
+          "proxy_indicator": "Energy Price"
+        },
+        {
+          "id": "소비심리",
+          "name": "Consumer Sentiment Index",
+          "name_kr": "소비심리 지수",
+          "category": "거시",
+          "description": "소비자 심리 지수",
+          "example_sentence": "소비심리 위축으로 수요가 둔화되었다",
+          "proxy_source": "Conference Board",
+          "proxy_indicator": "Consumer Confidence"
+        },
+        {
+          "id": "인플레이션",
+          "name": "Inflation Rate",
+          "name_kr": "인플레이션",
+          "category": "거시",
+          "description": "물가 상승률",
+          "example_sentence": "인플레이션으로 소비가 위축되었다",
+          "proxy_source": "BLS",
+          "proxy_indicator": "CPI"
+        },
+        {
+          "id": "금리",
+          "name": "Interest Rate",
+          "name_kr": "금리",
+          "category": "거시",
+          "description": "기준 금리",
+          "example_sentence": "금리 인상으로 가전 수요가 감소했다",
+          "proxy_source": "Fed",
+          "proxy_indicator": "Fed Funds Rate"
+        }
+      ]
+    },
+    "tier3": {
+      "description": "Event 기반 (8개)",
+      "validation_method": "EVENT",
+      "drivers": [
+        {
+          "id": "경쟁사가격인하",
+          "name": "Competitor Price Cut Event",
+          "name_kr": "경쟁사 가격인하",
+          "category": "경쟁",
+          "description": "경쟁사의 가격 인하 이벤트",
+          "example_sentence": "삼성의 대규모 할인 행사로 가격 경쟁이 심화되었다"
+        },
+        {
+          "id": "경쟁사신제품",
+          "name": "Competitor Product Launch Event",
+          "name_kr": "경쟁사 신제품",
+          "category": "경쟁",
+          "description": "경쟁사의 신제품 출시",
+          "example_sentence": "삼성 신모델 출시로 경쟁이 심화되었다"
+        },
+        {
+          "id": "공급망차질",
+          "name": "Supply Chain Disruption Event",
+          "name_kr": "공급망 차질",
+          "category": "공급망",
+          "description": "공급망 관련 차질 이벤트",
+          "example_sentence": "홍해 사태로 물류비가 급등했다"
+        },
+        {
+          "id": "무역규제",
+          "name": "Trade Regulation Event",
+          "name_kr": "무역규제",
+          "category": "정책",
+          "description": "관세, 무역 정책 변화",
+          "example_sentence": "미국 관세 부과로 원가 부담이 증가했다"
+        },
+        {
+          "id": "스포츠이벤트",
+          "name": "Sports Event",
+          "name_kr": "스포츠 이벤트",
+          "category": "이벤트",
+          "description": "올림픽, 월드컵 등 스포츠 행사",
+          "example_sentence": "파리 올림픽으로 유럽 TV 수요가 증가했다"
+        },
+        {
+          "id": "브랜드이슈",
+          "name": "Brand Reputation Event",
+          "name_kr": "브랜드 이슈",
+          "category": "브랜드",
+          "description": "브랜드 평판 관련 이벤트",
+          "example_sentence": "품질 이슈로 브랜드 이미지가 하락했다"
+        },
+        {
+          "id": "품질이슈",
+          "name": "Product Quality Issue",
+          "name_kr": "품질 이슈",
+          "category": "품질",
+          "description": "제품 품질 관련 문제",
+          "example_sentence": "리콜 발생으로 품질비용이 증가했다"
+        },
+        {
+          "id": "플랫폼정책변경",
+          "name": "Platform Policy Change",
+          "name_kr": "플랫폼 정책 변경",
+          "category": "플랫폼",
+          "description": "webOS, 스트리밍 등 정책 변화",
+          "example_sentence": "넷플릭스 광고 정책 변경으로 수익이 영향받았다"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "category": "DataQA descriptive internal",
+    "question": "2025년 3분기 북미 매출 보여줘",
+    "answer": {
+      "service_type": "DataQA",
+      "analysis_mode": "descriptive",
+      "data_source": "internal",
+      "entities": {
+        "period": {"year": 2025, "quarter": 3},
+        "region": "북미",
+        "company": "LGE",
+        "kpi_focus": "매출"
+      },
+      "confidence": 0.95,
+      "reasoning": "The user asks for a factual ERP KPI lookup."
+    }
+  },
+  {
+    "category": "DataQA diagnostic internal",
+    "question": "2025년 3분기 영업이익이 왜 떨어졌어?",
+    "answer": {
+      "service_type": "DataQA",
+      "analysis_mode": "diagnostic",
+      "data_source": "hybrid",
+      "entities": {
+        "period": {"year": 2025, "quarter": 3},
+        "company": "LGE",
+        "kpi_focus": "영업이익"
+      },
+      "confidence": 0.94,
+      "reasoning": "The user asks for why a KPI changed, so diagnostic analysis is required."
+    }
+  },
+  {
+    "category": "DataQA descriptive external",
+    "question": "최근 TV 시장 관련 이벤트 알려줘",
+    "answer": {
+      "service_type": "DataQA",
+      "analysis_mode": "descriptive",
+      "data_source": "external",
+      "entities": {
+        "kpi_focus": "TV 시장",
+        "drivers": ["시장 이벤트"]
+      },
+      "confidence": 0.9,
+      "reasoning": "The user asks for external events rather than ERP values."
+    }
+  },
+  {
+    "category": "ReportGeneration KPI diagnosis",
+    "question": "2025년 3분기 영업이익 하락 원인 보고서 만들어줘",
+    "answer": {
+      "service_type": "ReportGeneration",
+      "report_type": "KPIDiagnosis",
+      "entities": {
+        "period": {"year": 2025, "quarter": 3},
+        "company": "LGE",
+        "kpi_focus": "영업이익"
+      },
+      "confidence": 0.93,
+      "reasoning": "The user requests a document-form diagnostic report."
+    }
+  },
+  {
+    "category": "ReportGeneration performance summary",
+    "question": "2025년 4분기 실적 요약 보고서 작성해줘",
+    "answer": {
+      "service_type": "ReportGeneration",
+      "report_type": "PerformanceSummary",
+      "entities": {
+        "period": {"year": 2025, "quarter": 4},
+        "company": "LGE"
+      },
+      "confidence": 0.92,
+      "reasoning": "The user requests a periodic performance summary report."
+    }
+  },
+  {
+    "category": "Clarification",
+    "question": "보고서 만들어줘",
+    "answer": {
+      "service_type": "ReportGeneration",
+      "report_type": "PerformanceSummary",
+      "entities": {},
+      "confidence": 0.55,
+      "reasoning": "The requested report lacks a period and KPI scope.",
+      "clarifying_question": "어떤 기간과 KPI를 기준으로 보고서를 작성할까요?"
+    }
+  }
+]
